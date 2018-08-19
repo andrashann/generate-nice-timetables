@@ -9,6 +9,12 @@ In addition to installing the packages from `REQUIREMENTS.txt`, you should also 
 ## Usage
 You should first set your Google API key in the envirorment (for example, in Terminal on a Mac, you could do this by `export GOOGLE_API_KEY="MY_API_KEY"`) before launching the notebook server. The notebook is commented and self contained so you can just run the whole thing.
 
+The notebook will generate a timetable like the one shown below and save it in `timetable.html`.
+
+![Sample timetable](timetable.png "Sample timetable")
+
+The meaning of the specific data fields should be easy to understand; in case of unclarity they can be inferred from the code.
+
 ## Contributing
 
 Feel free to submit pull requests; help would be especially appreciated in turning this into a proper Python package and command line tool.
@@ -25,3 +31,7 @@ transit_timetable \
 	-k GOOGLE_API_KEY \
 	-O timetable.html
 ```
+
+## See also
+
+[This post on my blog](https://hann.io/articles/2018/nicely-formatted-transit-schedules/) describes the project with a bit more context.
